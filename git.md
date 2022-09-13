@@ -23,8 +23,8 @@
 `git stash list`
 
 ### Popping the stash
-`git stash pop` pops the top stash
-`git stash pop stash@{n}` pops the nth stash
+`git stash pop` pops the top stash  
+`git stash pop stash@{n}` pops the nth stash  
 `git stash pop stash^{/stash-name}` pops the stash named stash-name
 
 Resolving stash conflicts without a commit:
