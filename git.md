@@ -1,18 +1,15 @@
-## Branches
+## Commits
 
-### List all branches
+### List commits
+`git log`
 
-`git branch` to list local branches, `git branch -r` to list remote branches
-
-### Switch branches
-`git checkout <branch-name>`
-
-### Moving existing edits to a new branch
-`git switch -c <new-branch>`
-
-### Rename the current branch (no remote)
-
-`git branch -m <new-name>`
+### Add to an old commit
+```
+git add <my fixed files>
+git commit --fixup=<commit id>
+git rebase --interactive --autosquash <commit id>~
+```
+...then save & close the editor.
 
 ## Stash
 
@@ -34,6 +31,23 @@ $ git stash pop
 $ git restore --staged .
 $ git stash drop
 ```
+
+## Branches
+
+### List all branches
+`git branch` to list local branches, `git branch -r` to list remote branches
+
+### Switch branches
+`git checkout <branch-name>`
+
+### Moving existing edits to a new branch
+`git switch -c <new-branch>`
+
+### Rename the current branch (no remote)
+`git branch -m <new-name>`
+
+### Delete a local branch
+`git branch -d <branch-name>`
 
 ## Undoing
 
